@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintCube", "PaintCube.csproj", "{CCE815A4-2107-43F0-BF07-CF34E9F896D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE815A4-2107-43F0-BF07-CF34E9F896D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE815A4-2107-43F0-BF07-CF34E9F896D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE815A4-2107-43F0-BF07-CF34E9F896D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE815A4-2107-43F0-BF07-CF34E9F896D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB18CD1B-6974-46AE-8C21-D287858DE6CA}
+	EndGlobalSection
+EndGlobal
