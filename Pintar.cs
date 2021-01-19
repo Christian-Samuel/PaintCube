@@ -14,14 +14,8 @@ namespace PaintCube
     class Pintar
     {
         Label paleta;
-
-        public struct rgb
-        {
-            uint R;
-            uint G;
-            uint B;
-        }
-        public rgb RGB;
+        public bool contagotaStts = false;
+      
         public struct borracha 
         {
             public Label borrachaLbl;
@@ -42,6 +36,15 @@ namespace PaintCube
             paleta.BackColor = Color.FromArgb((int)r, (int)g, (int)b);
         }
 
+        public bool contaGotas()
+        {
+            if (contagotaStts)
+                contagotaStts = false;
+            else
+                contagotaStts = true;
+
+            return contagotaStts;
+        }
         public void colorir(Label lbl)
         {
             if (Borracha.borrachaAtv)

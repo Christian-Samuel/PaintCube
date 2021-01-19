@@ -28,12 +28,22 @@ namespace PaintCube
 
         private void label1_MouseDown(object sender, MouseEventArgs e)
         {
-            timer1.Enabled = true;
+            if (pintar.contagotaStts)
+            {
+                Label newCor = sender as Label;
+                paleta.BackColor = newCor.BackColor;
+                pintar.contaGotas();
+                contagotaIco.BorderStyle = BorderStyle.None;
+            }
+            else
+                timer1.Enabled = true;
         }
 
         private void label1_MouseUp(object sender, MouseEventArgs e)
         {
             timer1.Enabled = false;
+
+           
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -139,6 +149,23 @@ namespace PaintCube
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             pintar.salvar(celulas, saveFileDialog1.FileName);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(newIco, "Novo Desenho");
+            toolTip1.SetToolTip(gravarIco, "Salvar Desenho");
+            toolTip1.SetToolTip(carregarIco, "Carregar Desenho");
+            toolTip1.SetToolTip(borrachaIco, "Borracha");
+
+        }
+
+        private void contagotaIco_Click(object sender, EventArgs e)
+        {
+            if (pintar.contaGotas())
+                contagotaIco.BorderStyle = BorderStyle.FixedSingle;
+            else
+                contagotaIco.BorderStyle = BorderStyle.None;
         }
     }
 }
