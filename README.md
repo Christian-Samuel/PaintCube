@@ -2,8 +2,12 @@
 Aplicação para fazer desenhos quadriculados
 
 -Desenho feito no Paint Cube:<br>
-![telaprincipal](https://github.com/Christian-Samuel/PaintCube/blob/master/Imagens/Tela.gif?raw=true)
+![telaprincipal](https://github.com/Christian-Samuel/PaintCube/blob/master/img/desenho.PNG?raw=true)
 
+## Funcionalidades
+->**Salvar/Carregar desenho**<br>
+->**Borracha**<br>
+->**Dropper**<br>
 
 
 ## Como abrir?
